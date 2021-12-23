@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Blackravine',
+  title: 'Black Ravine',
   tagline: 'Bring the real future',
   url: process.env.SITE_URL != null ? process.env.SITE_URL : 'http://localhost:3000',
   baseUrl: '/',
@@ -44,6 +44,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+      },
       navbar: {
         title: 'Black Ravine',
         logo: {
@@ -55,14 +59,14 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           // {to: '/blog', label: 'Blog', position: 'left'}, // para habilitar o blog novamente
-          {
-            href: 'https://github.com/winstonsec/docs-public-blackravine',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/winstonsec/docs-public-blackravine',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
