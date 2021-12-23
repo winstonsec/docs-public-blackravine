@@ -12,9 +12,9 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.svg',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/logowhite.svg',
+  organizationName: 'Black Ravine', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
 
   presets: [
     [
@@ -22,6 +22,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/winstonsec/docs-public-blackravine/',
@@ -55,7 +57,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'}, // para habilitar o blog novamente
           {
             href: 'https://github.com/winstonsec/docs-public-blackravine',
             label: 'GitHub',
@@ -70,30 +72,55 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Home',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Social',
             items: [
               {
                 label: 'Instagram',
                 href: 'https://www.instagram.com/jonatas_winston/',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/Jonatas_Winston',
+              },
+              {
+                label: 'Linkedin',
+                href: 'https://www.linkedin.com/in/jonataswinston/',
+              },
+              {
+                label: 'More',
+                href: 'https://linktr.ee/wnst',
               },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/winstonsec/docs-public-blackravine',
+                href: 'https://github.com/winstonsec',
+              },
+            ],
+          },
+          {
+            title: 'Sites',
+            items: [
+              {
+                label: 'Black Ravine',
+                href: 'https://blackravine.com',
+              },
+              {
+                label: 'Retriy',
+                href: 'https://retriy.com',
               },
             ],
           },
