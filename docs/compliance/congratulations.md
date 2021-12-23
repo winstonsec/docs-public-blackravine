@@ -1,6 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
+tags: [privacy, policy]
 ---
 
-# Congratulations!
+# Política de privacidade
 
+Não pode ver, é privado!
