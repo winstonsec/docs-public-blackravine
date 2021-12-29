@@ -128,7 +128,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Black Ravine. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Black Ravine.`,
       },
       prism: {
         theme: lightCodeTheme,
