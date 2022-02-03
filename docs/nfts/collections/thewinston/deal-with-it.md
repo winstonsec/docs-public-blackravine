@@ -1,6 +1,6 @@
 ---
 title: NFT - Deal With It
-sidebar_position: 1
+sidebar_position: 2
 tags: [privacy, policy]
 ---
 
