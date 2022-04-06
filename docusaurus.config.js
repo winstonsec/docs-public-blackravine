@@ -135,6 +135,18 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    plugins: [
+      [
+        "docusaurus-plugin-remote-content",
+        {
+            // options here
+            name: "some-content", // used by CLI, must be path safe
+            sourceBaseUrl: "https://raw.githubusercontent.com/winstonsec/api-backend-chatbootgateway/master/", // the base url for the markdown (gets prepended to all of the documents when fetching)
+            outDir: "docs/osi", // the base directory to output to.
+            documents: ["README.md"], // the file names to download
+        },
+      ],
+    ],
 };
 
 module.exports = config;
